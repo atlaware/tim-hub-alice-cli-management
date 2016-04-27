@@ -20,3 +20,8 @@ Se il risultato è 2 nesusn host è connesso, se è 1 o 0 ci sono client
 
 Riavvio modem: ./modemalice.sh reboot
 
+#crontab
+59      4       3       *       *       /usr/bin/me/alice_fibra/modemalice.sh reboot
+
+riavvio mensile alle 4 e 59, ogni giorno 3 del mese
+
