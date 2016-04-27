@@ -7,7 +7,7 @@ Non so come si comporta con modem senza password impostata, fate sapere :)
 # info
 * Editare i parametri di configurazione in testa allo script
 * Software necessari: md5sum, php
-* Testato su: AGVTF_5.3.0
+* Testato su: AGVTF_5.3.0 - modem fibra
 
 #esempi
 Uso: ./modemalice.sh {wifilist|reboot}
