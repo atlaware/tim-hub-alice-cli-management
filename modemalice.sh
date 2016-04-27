@@ -8,6 +8,7 @@ pass="" # password, non so se/come funziona sui modem senza password, provate :)
 tmp="/tmp/"
 #proxy="-x "127.0.0.1:9090"" # solo per debug, non abilitare
 vermodem="AGVTF_5.3.0" # versione del modem su cui ho testato lo script
+versione="0.1 del 27/4/2016"
 
 ##------------------------END-CONF---------------------------------------
 
@@ -69,7 +70,7 @@ case $1 in
 	    echo "-------------Gestione Modem Telecom Alice-----------------"
 	    echo "Editare i parametri di configurazione in testa allo script"
 	    echo "Software necessari: md5sum, php"
-	    echo "Testato su: $vermodem"
+	    echo "Testato su: $vermodem - Versione script: $versione"
             echo "----------------------------------------------------------"
             echo $"Uso: $0 {wifilist|reboot}"
             exit 1
