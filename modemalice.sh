@@ -66,12 +66,24 @@ case $1 in
 		operazione_data "resetAG.lp" "rn=$xauthenc&action=saveRestart"
 		#cat $tmp/alice_out3.txt	
 	;;
+        info)
+                echo "info"
+                main
+                operazione "home.lp"
+                cat $tmp/alice_out3.txt
+        ;;
+        stats)
+                echo "stats"
+                main
+                operazione "statisticsAG.lp"
+                cat $tmp/alice_out3.txt
+        ;;
         *)
 	    echo "-------------Gestione Modem Telecom Alice-----------------"
 	    echo "Editare i parametri di configurazione in testa allo script"
 	    echo "Software necessari: md5sum, php"
 	    echo "Testato su: $vermodem - Versione script: $versione"
             echo "----------------------------------------------------------"
-            echo $"Uso: $0 {wifilist|reboot}"
+            echo $"Uso: $0 {wifilist|reboot|info|stats}"
             exit 1
 esac
