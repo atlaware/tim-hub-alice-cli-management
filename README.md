@@ -1,16 +1,16 @@
 # modem-alice-telecom
 Script per la gestione da command line linux del modem alice di telecom italia.
-Per ora sono implementate le funzioni di base "wifilist" e "reboot" ma è semplice aggiungerne altre con la struttura di login al modem funzionante.
+Per ora sono implementate le funzioni di base "wifilist", "reboot", "info" e "stats" ma è semplice aggiungerne altre con la struttura di login al modem funzionante.
 
 Non so come si comporta con modem senza password impostata, fate sapere :)
 
 # info
 * Editare i parametri di configurazione in testa allo script
 * Software necessari: md5sum, php
-* Testato su: AGVTF_5.3.0 - modem fibra
+* Testato su: AGVTF_5.3.3 - modem fibra
 
 #esempi
-Uso: ./modemalice.sh {wifilist|reboot}
+Uso: ./modemalice.sh {wifilist|reboot|info|stats}
 
 Client connessi: **./modemalice.sh wifilist|grep "Nessun"|wc -l**
 
