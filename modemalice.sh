@@ -8,7 +8,7 @@ pass="" # password, non so se/come funziona sui modem senza password, provate :)
 tmp="/tmp/"
 #proxy="-x "127.0.0.1:9090"" # solo per debug, non abilitare
 vermodem="AGVTF_5.3.3" # versione del modem su cui ho testato lo script
-versione="0.1 del 27/4/2016"
+versione="0.2 del 27/7/2016"
 
 ##------------------------END-CONF---------------------------------------
 
