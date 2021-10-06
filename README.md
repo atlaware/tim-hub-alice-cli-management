@@ -1,4 +1,6 @@
-# modem-alice-telecom
+# UPDATE 06/10/2021: aggiunto script tim hub+
+
+# tim-hub-alice-cli-management
 Script per la gestione da command line linux del modem alice di telecom italia.
 Per ora sono implementate le funzioni di base "wifilist", "reboot", "info" e "stats" ma è semplice aggiungerne altre con la struttura di login al modem funzionante.
 
@@ -6,8 +8,9 @@ Non so come si comporta con modem senza password impostata, fate sapere :)
 
 # info
 * Editare i parametri di configurazione in testa allo script
-* Software necessari: md5sum, php
-* Testato su: AGVTF_5.3.3 - modem fibra
+* Software necessari: md5sum, php, jq, sha256sum
+* Testato su: AGVTF_5.3.3 - modem alice adsl/vdsl (modemalice.sh)
+* Testato su: TIM HUB+ (ZTE H388) - modem tim hub+ fibra/vdsl2 (modemtimhub.sh)
 
 #esempi
 Uso: ./modemalice.sh {wifilist|reboot|info|stats}
