@@ -20,7 +20,7 @@ function elablogin(){
 	curl $verb -k -m 10 -L $proxy -c $tmp/alice_cookie -b $tmp/alice_cookie -o $tmp/alice_out2.txt -e "https://$alice/"  "http://$alice/?_type=loginData&_tag=login_entry"
 	curl $verb -k -m 10 -L $proxy -c $tmp/alice_cookie -b $tmp/alice_cookie -o $tmp/alice_out3.txt -e "https://$alice/"  "http://$alice/?_type=loginData&_tag=login_token"
 	sessionTOKEN=$(jq '.sess_token' $tmp/alice_out2.txt|tr -d "\"")
-	xml_root=$(cat tmp/alice_out3.txt|cut -d '>' -f 2|cut -d '<' -f 1)
+	xml_root=$(cat $tmp/alice_out3.txt|cut -d '>' -f 2|cut -d '<' -f 1)
 	echo -n "$pass$xml_root" > $tmp/shapass
 	password=$(sha256sum $tmp/shapass|cut -d ' ' -f1)
 
