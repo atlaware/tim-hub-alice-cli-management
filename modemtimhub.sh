@@ -80,7 +80,7 @@ case $1 in
 	*)
 	    echo "-------------Gestione Modem TIM HUB-----------------"
 	    echo "Editare i parametri di configurazione in testa allo script"
-	    echo "Software necessari: md5sum, php"
+	    echo "Software necessari: jq, sha256sum"
 	    echo "Testato su: $vermodem"
             echo "----------------------------------------------------------"
             echo $"Uso: $0 {wifilist|reboot|info}"
