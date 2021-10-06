@@ -8,7 +8,7 @@ Non so come si comporta con modem senza password impostata, fate sapere :)
 
 # info
 * Editare i parametri di configurazione in testa allo script
-* Software necessari: md5sum, php, jq, sha256sum
+* Software necessari: md5sum, php (modem alice) - jq, sha256sum (modem timhub)
 * Testato su: AGVTF_5.3.3 - modem alice adsl/vdsl (modemalice.sh)
 * Testato su: TIM HUB+ (ZTE H388) - modem tim hub+ fibra/vdsl2 (modemtimhub.sh)
 
