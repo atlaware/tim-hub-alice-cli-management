@@ -8,7 +8,7 @@ pass="PASSWORD" # password
 tmp="/tmp/"
 #verb="-v"
 #proxy="-x "127.0.0.1:9090"" # solo per debug, non abilitare
-vermodem="TIM HUB+ (ZTE H388)" # versione del modem su cui ho testato lo script
+vermodem="TIM HUB+ - H388X AGZHP_1.2.0" # versione del modem su cui ho testato lo script
 
 ##------------------------END-CONF---------------------------------------
 
