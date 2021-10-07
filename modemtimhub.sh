@@ -23,6 +23,7 @@ function elablogin(){
 	xml_root=$(cat $tmp/alice_out3.txt|cut -d '>' -f 2|cut -d '<' -f 1)
 	echo -n "$pass$xml_root" > $tmp/shapass
 	password=$(sha256sum $tmp/shapass|cut -d ' ' -f1)
+	rm $tmp/shapass
 
 	echo $sessionTOKEN 
 	echo $xml_root
