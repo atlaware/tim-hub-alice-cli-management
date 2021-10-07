@@ -1,4 +1,4 @@
-# UPDATE 06/10/2021: aggiunto script tim hub+
+# UPDATE 06/10/2021: aggiunto script tim hub+ (H388X AGZHP_1.2.0)
 
 # tim-hub-alice-cli-management
 Script per la gestione da command line linux del modem alice di telecom italia.
