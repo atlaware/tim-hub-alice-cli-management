@@ -15,12 +15,14 @@ Non so come si comporta con modem senza password impostata, fate sapere :)
 * Testato su: H2640 PMZHP_1.0.1_001 - modem poste italiane adsl/vdsl (h2640.sh)
 
 #esempi
+
 Uso: ./modemalice.sh {wifilist|reboot|info|stats}
+
 Uso: ./h2640.sh {wlandhcp|wlanstatus|dnshostnames|dslstatus|wanstatus|ddnsstatus|reboot}
 
 Client connessi: **./modemalice.sh wifilist|grep "Nessun"|wc -l**
 
-Se il risultato è 2 nesusn host è connesso, se è 1 o 0 ci sono client
+Se il risultato è 2 nessun host è connesso, se è 1 o 0 ci sono client
 
 Riavvio modem: **./modemalice.sh reboot**
 
